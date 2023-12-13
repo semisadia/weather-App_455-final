@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Wizard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <header>
+    <h1>Weather Wizard</h1>
+    <input type="text" id="searchbox" placeholder="Search country">
+    <button id="search-btn">Go</button>
+    <span id="location"></span>
+  </header>
+  <main>
+    <div id="current-weather">
+      <img id="weather-icon">
+      <span id="temperature">--°C</span>
+      <span id="feels-like">Feels like: --°C</span>
+      <span id="description">--</span>
+    </div>
+    <div id="hourly-forecast">
+      <h2>Hourly Forecast</h2>
+      <ul></ul>
+    </div>
+    <div id="daily-forecast">
+      <h2>Daily Forecast</h2>
+      <ul></ul>
+    </div>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>

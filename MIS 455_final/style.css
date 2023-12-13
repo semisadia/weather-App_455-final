@@ -1,84 +1,59 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f2f2f2;
   }
   
   header {
-    background-color: #333;
-    color: #fff;
+    text-align: center;
     padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
   
-  #searchbox {
-    padding: 5px;
-    border: 1px solid #ccc;
+  #search-bar {
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    margin-right: 10px;
+    font-size: 16px;
   }
   
-  #search-btn {
-    padding: 5px 10px;
-    background-color: #eee;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #location {
-    font-style: italic;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  #current-weather {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  #weather-icon {
-    width: 100px;
-    height: 100px;
-  }
-  
-  #temperature, #feels-like {
-    font-size: 24px;
-    margin-right: 10px;
-  }
-  
-  #description {
-    text-transform: capitalize;
-  }
-  
-  #hourly-forecast, #daily-forecast {
-    border-top: 1px solid #eee;
-    padding: 20px;
-  }
-  
-  h2 {
-    margin-bottom: 10px;
-  }
-  
-  #hourly-forecast ul, #daily-forecast ul {
+  #search-results {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: none;
   }
   
-  #hourly-forecast li, #daily-forecast li {
+  #search-results li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  #main-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    display: none;
+  }
+  
+  #main-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #main-content p {
+    font-size: 16px;
     margin-bottom: 5px;
   }
   
-  #hourly-forecast li span:first-child, #daily-forecast li span:first-child {
-    width: 50px;
-    text-align: right;
+  #main-content img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
   }

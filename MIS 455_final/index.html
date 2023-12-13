@@ -5,14 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Forecast</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
 </head>
 <body>
   <header>
     <h1>Find Your Weather Forecast</h1>
   </header>
   <main>
-    <input type="text" id="search-bar" placeholder="Search city name">
-    <ul id="search-results"></ul>
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Search city name">
+      <ul id="search-results"></ul>
+    </div>
     <div id="main-content"></div>
   </main>
   <script src="script.js"></script>
